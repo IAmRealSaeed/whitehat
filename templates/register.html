@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link href="LINK TO CSS" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Register</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Register</h1>
+        <form action="/register" method="POST">
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-medium text-gray-700">Username:</label>
+                <input type="text" id="username" name="username" required class="w-full p-2 border rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="password" name="password" required class="w-full p-2 border rounded-md">
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Register</button>
+        </form>
+
+        <p class="mt-4 text-center text-neutral-400">Already have an account? <a href="/login" class="text-blue-500 hover:underline">Login</a></p>
+    </div>
+</body>
+</html>
